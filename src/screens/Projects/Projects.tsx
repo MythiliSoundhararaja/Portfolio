@@ -84,26 +84,26 @@ export const Projects = (): JSX.Element => {
 
         {/* Projects Grid Section */}
         <section className="w-full max-w-[1554px] mx-auto py-16 px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1462px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[731px] h-[562px]"
+                className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full max-w-[600px] mx-auto"
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-[320px] object-cover"
+                    className="w-full h-[250px] sm:h-[280px] lg:h-[320px] object-cover"
                   />
                 </div>
                 
-                <div className="p-6 h-[242px] flex flex-col">
-                  <h3 className="font-['Poppins',Helvetica] font-semibold text-black text-[20px] mb-3 line-clamp-2">
+                <div className="p-4 sm:p-6 flex flex-col min-h-[200px]">
+                  <h3 className="font-['Poppins',Helvetica] font-semibold text-black text-[18px] sm:text-[20px] mb-3 line-clamp-2">
                     {project.title}
                   </h3>
                   
-                  <p className="font-['Poppins',Helvetica] font-normal text-[#6d6d6d] text-[14px] leading-relaxed flex-1 overflow-hidden">
+                  <p className="font-['Poppins',Helvetica] font-normal text-[#6d6d6d] text-[13px] sm:text-[14px] leading-relaxed flex-1 overflow-hidden line-clamp-4">
                     {project.description}
                   </p>
                 </div>
