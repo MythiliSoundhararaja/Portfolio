@@ -55,15 +55,15 @@ export const Home = (): JSX.Element => {
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
             {/* Navigation Bar */}
-            <div className="w-full max-w-[1104px] h-[70px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
+            <div className="w-full max-w-[900px] h-[56px] mx-auto bg-black rounded-[48px] border border-solid border-[#524d4d] flex items-center justify-center px-5">
               {navItems.map((item, index) => (
                 <Link
                   to={item.path}
                   key={`nav-${index}`}
-                  className={`px-8 py-4 cursor-pointer ${index > 0 ? "ml-8" : ""}`}
+                  className={`px-6 py-3 cursor-pointer ${index > 0 ? "ml-6" : ""}`}
                 >
                   <div
-                    className={`text-[28px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
+                    className={`text-[22px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
                   >
                     {item.name}
                   </div>
