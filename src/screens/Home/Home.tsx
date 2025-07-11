@@ -88,7 +88,7 @@ export const Home = (): JSX.Element => {
               <div className="flex-1 relative">
                 <div className="flex justify-center items-center">
                   <img
-                    className="w-[1000px] h-[1000px] object-cover"
+                    className="w-[700px] h-[700px] object-cover"
                     alt="Mythili 3D Avatar"
                     src="/3d_main-removebg-preview.png"
                   />
