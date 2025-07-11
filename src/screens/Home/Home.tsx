@@ -77,7 +77,7 @@ export const Home = (): JSX.Element => {
                 <div className="font-['Poppins',Helvetica] font-normal text-black text-[72px]">
                   Hi I'm
                 </div>
-                <div className="font-['Poppins',Helvetica] font-normal text-black text-[200px] leading-tight">
+                <div className="font-['Poppins',Helvetica] font-normal text-black text-[200px] leading-none -mt-4">
                   Mythili
                 </div>
                 <div className="max-w-[513px] font-['Poppins',Helvetica] font-normal text-black text-[23px] mt-4">
@@ -88,7 +88,7 @@ export const Home = (): JSX.Element => {
               <div className="flex-1 relative">
                 <div className="flex justify-center items-center">
                   <img
-                    className="w-[700px] h-[700px] object-cover"
+                    className="w-[800px] h-[800px] object-cover"
                     alt="Mythili 3D Avatar"
                     src="/3d_main-removebg-preview.png"
                   />
