@@ -213,7 +213,7 @@ export const Home = (): JSX.Element => {
               </span> */}
             </div>
 
-            <img className="h-6" alt="Contact emoji" src="/public/mail-removebg-preview.png" />
+            <img className="h-6" alt="Contact emoji" src="/mail-removebg-preview.png" />
 
             <div className="flex items-center">
               <div className="relative w-[18px] h-[27px] mr-4">
