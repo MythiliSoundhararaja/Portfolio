@@ -39,13 +39,13 @@ export const Home = (): JSX.Element => {
     { src: "/python_3098090.png", alt: "Python" },
     { src: "/java-script_1199124.png", alt: "JavaScript" },
     { src: "/react_logo.png", alt: "React" },
-    { src: "/image-8.png", alt: "TensorFlow" },
-    { src: "/image-9.png", alt: "PyTorch" },
-    { src: "/material-icon-theme-pytorch.svg", alt: "PyTorch" },
-    { src: "/material-icon-theme-figma.svg", alt: "Figma" },
-    { src: "/mdi-github.svg", alt: "GitHub" },
-    { src: "/simple-icons-n8n.svg", alt: "n8n" },
-    { src: "/devicon-googlecolab.svg", alt: "Google Colab" },
+    { src: "/github_bw_logo.png", alt: "Github" },
+    { src: "/vs code_lgo.png", alt: "VS Code" },
+    { src: "/pytorch_logo.png", alt: "PyTorch" },
+    { src: "/figma_logo.png", alt: "Figma" },
+    { src: "/n8n_logo.png", alt: "N8N" },
+    { src: "/colab.png", alt: "Google Colab" },
+    { src: "/mongodb_logo.png", alt: "MongoDB" },
   ];
 
   return (
