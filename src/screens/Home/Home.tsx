@@ -36,9 +36,9 @@ export const Home = (): JSX.Element => {
 
   // Tech stack images
   const techStack = [
-    { src: "/image-5.png", alt: "Python" },
-    { src: "/image-6.png", alt: "JavaScript" },
-    { src: "/image-7.png", alt: "React" },
+    { src: "/python_3098090.png", alt: "Python" },
+    { src: "/java-script_1199124.png", alt: "JavaScript" },
+    { src: "/react_logo.png", alt: "React" },
     { src: "/image-8.png", alt: "TensorFlow" },
     { src: "/image-9.png", alt: "PyTorch" },
     { src: "/material-icon-theme-pytorch.svg", alt: "PyTorch" },
