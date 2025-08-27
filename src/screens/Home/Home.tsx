@@ -40,11 +40,11 @@ export const Home = (): JSX.Element => {
     { src: "/java-script_1199124.png", alt: "JavaScript" },
     { src: "/react_logo.png", alt: "React" },
     { src: "/github_bw_logo.png", alt: "Github" },
-    { src: "/vs code_lgo.png", alt: "VS Code" },
+    { src: "/vs_code_logo.png", alt: "VS Code" },
     { src: "/pytorch_logo.png", alt: "PyTorch" },
     { src: "/figma_logo.png", alt: "Figma" },
     { src: "/n8n_logo.png", alt: "N8N" },
-    { src: "/colab.png", alt: "Google Colab" },
+    { src: "/colab-logo.png", alt: "Google Colab" },
     { src: "/mongodb_logo.png", alt: "MongoDB" },
   ];
 
@@ -190,11 +190,11 @@ export const Home = (): JSX.Element => {
             ))}
           </div>
 
-          <img
+          {/* <img
             className="w-full max-w-[1718px] h-[19px] mx-auto"
             alt="Below decoration"
             src="/below.png"
-          />
+          /> */}
         </section>
 
         {/* Footer */}
