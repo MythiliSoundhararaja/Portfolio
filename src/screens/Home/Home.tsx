@@ -55,7 +55,7 @@ export const Home = (): JSX.Element => {
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
             {/* Navigation Bar */}
-            <div className="w-full max-w-[1104px] h-[70px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
+            <div className="w-full max-w-[850px] h-[60px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
               {navItems.map((item, index) => (
                 <Link
                   to={item.path}
@@ -73,11 +73,11 @@ export const Home = (): JSX.Element => {
 
             {/* Hero Content */}
             <div className="flex mt-16">
-              <div className="flex-1 flex flex-col justify-center mt-32">
-                <div className="font-['Poppins',Helvetica] font-normal text-black text-[72px]">
+              <div className="flex-1 flex flex-col justify-center mt-32 ml-32">
+                <div className="font-['Poppins',Helvetica] font-normal text-black text-[50px]">
                   Hi I'm
                 </div>
-                <div className="font-['Poppins',Helvetica] font-normal text-black text-[200px] leading-tight">
+                <div className="font-['Poppins',Helvetica] font-normal text-black text-[100px] leading-tight">
                   Mythili
                 </div>
                 <div className="max-w-[513px] font-['Poppins',Helvetica] font-normal text-black text-[23px] mt-4">
@@ -88,7 +88,7 @@ export const Home = (): JSX.Element => {
               <div className="flex-1 relative">
                 <div className="flex justify-center items-center">
                   <img
-                    className="w-[1000px] h-[1000px] object-cover"
+                    className="w-[440px] h-[440px] object-cover"
                     alt="Mythili 3D Avatar"
                     src="/3d_main-removebg-preview.png"
                   />
@@ -102,7 +102,7 @@ export const Home = (): JSX.Element => {
 
         {/* What I Do Section */}
         <section className="w-full max-w-[1554px] mx-auto py-12">
-          <div className="mb-16">
+          <div className="mb-16 ml-20">
             <h2 className="font-['Poppins',Helvetica] font-semibold text-[#6d6d6d] text-2xl text-left">
               What I do
             </h2>
@@ -138,7 +138,7 @@ export const Home = (): JSX.Element => {
         <section className="relative w-full py-12">
           <div className="max-w-[1554px] mx-auto flex">
             <div className="flex-1 px-12 flex flex-col justify-center">
-              <h2 className="font-['Poppins',Helvetica] font-semibold text-[#6d6d6d] text-2xl mb-4">
+              <h2 className="font-['Poppins',Helvetica] font-semibold text-[#6d6d6d] text-3xl mb-4">
                 About me
               </h2>
               <h3 className="font-['Poppins',Helvetica] font-medium text-black text-4xl mb-8 flex items-center">
@@ -148,7 +148,7 @@ export const Home = (): JSX.Element => {
                 </span>
                 r & UI/UX Designer
               </h3>
-              <p className="font-['Poppins',Helvetica] font-normal text-black text-xl max-w-[734px]">
+              <p className="font-['Poppins',Helvetica] font-normal text-black text-1.5xl max-w-[734px]">
                 I'm Mythili, a Machine Learning Engineer and UI/UX Designer who
                 loves building human-centered solutions. I enjoy working at the
                 intersection of design and intelligence — making technology both
@@ -159,7 +159,7 @@ export const Home = (): JSX.Element => {
 
             <div className="flex-1 flex items-center justify-center">
               <img
-                className="w-[492px] h-[725px] object-cover"
+                className="w-[400px] h-[600px] object-cover"
                 alt="Mythili portrait"
                 src="/3d_me_2-removebg-preview.png"
               />
@@ -169,11 +169,11 @@ export const Home = (): JSX.Element => {
 
         {/* Tech Stack Section */}
         <section className="w-full bg-neutral-800 py-8">
-          <img
+          {/* <img
             className="w-full max-w-[1718px] h-[19px] mx-auto"
             alt="Above decoration"
             src="/above.png"
-          />
+          /> */}
 
           <div className="flex justify-center gap-6 my-8">
             {techStack.map((tech, index) => (
@@ -201,19 +201,19 @@ export const Home = (): JSX.Element => {
         <footer className="w-full bg-black h-[92px] flex items-center justify-center">
           <div className="flex items-center justify-between w-full max-w-[1000px]">
             <div className="flex items-center">
-              <img
+              {/* <img
                 className="w-[18px] h-[18px] mr-4"
                 alt="Phone icon"
                 src="/vector-2.svg"
-              />
-              <span className="font-['Poppins',Helvetica] font-medium text-white text-xl">
+              /> */}
+              {/* <span className="font-['Poppins',Helvetica] font-medium text-white text-xl">
                 <span className="font-['Poppins',Helvetica] font-medium text-white text-base">
                   +91 8939897205
                 </span>
-              </span>
+              </span> */}
             </div>
 
-            <img className="h-6" alt="Contact emoji" src="/contactemoji.png" />
+            <img className="h-6" alt="Contact emoji" src="/public/mail-removebg-preview.png" />
 
             <div className="flex items-center">
               <div className="relative w-[18px] h-[27px] mr-4">

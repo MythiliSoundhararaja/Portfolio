@@ -52,7 +52,7 @@ export const Projects = (): JSX.Element => {
 
   return (
     <div className="bg-white flex flex-row justify-center w-full min-h-screen">
-      <div className="bg-white overflow-hidden w-full max-w-[1728px] relative">
+      <div className="bg-white overflow-hidden w-full max-w-[1028px] gap-8 relative">
         {/* Header Section */}
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
@@ -74,7 +74,7 @@ export const Projects = (): JSX.Element => {
             </div>
 
             {/* Page Title */}
-            <div className="text-left mt-16 px-8">
+            <div className="text-left mt-8">
               <h1 className="font-['Poppins',Helvetica] font-bold text-black text-[80px] leading-tight">
                 Projects
               </h1>
@@ -83,12 +83,12 @@ export const Projects = (): JSX.Element => {
         </section>
 
         {/* Projects Grid Section */}
-        <section className="w-full max-w-[1554px] mx-auto py-16 px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1462px] mx-auto">
+        <section className="w-full max-w-[1024px] mx-auto py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] relative max-w-[724px] mx-auto">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[731px] h-[562px]"
+                className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[501px] h-[562px]"
               >
                 <div className="relative overflow-hidden">
                   <img
