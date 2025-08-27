@@ -220,7 +220,7 @@ export const Home = (): JSX.Element => {
                 <img
                   className="w-[18px] h-[18px]"
                   alt="Copyright icon"
-                  src="/vector.svg"
+                  src="/copyright.png"
                 />
                 <div className="absolute top-0 left-[3px] font-['Poppins',Helvetica] font-light text-white text-lg">
                   c
