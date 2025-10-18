@@ -63,7 +63,11 @@ export const Home = (): JSX.Element => {
                   className={`px-8 py-4 cursor-pointer ${index > 0 ? "ml-8" : ""}`}
                 >
                   <div
-                    className={`text-[28px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
+                    className={`text-[28px] font-['Poppins',Helvetica] ${
+                      item.active
+                        ? "text-white font-bold"
+                        : "text-[#ababab] font-medium"
+                    }`}
                   >
                     {item.name}
                   </div>
@@ -168,70 +172,58 @@ export const Home = (): JSX.Element => {
         </section>
 
         {/* Tech Stack Section */}
-        <section className="w-full bg-neutral-800 py-8">
-          {/* <img
-            className="w-full max-w-[1718px] h-[19px] mx-auto"
-            alt="Above decoration"
-            src="/above.png"
-          /> */}
+        <section className="w-full bg-neutral-800 py-8 overflow-hidden">
+          <h2 className="text-center text-white text-2xl font-['Poppins',Helvetica] mb-6">
+            Tech Stack
+          </h2>
 
-          <div className="flex justify-center gap-6 my-8">
-            {techStack.map((tech, index) => (
-              <div
-                key={`tech-${index}`}
-                className="w-[163px] h-[109px] bg-[linear-gradient(180deg,rgba(217,217,217,1)_0%,rgba(96,95,95,1)_100%)] flex items-center justify-center rounded-lg"
-              >
-                <img
-                  className="w-[76px] h-[76px] object-contain"
-                  alt={tech.alt}
-                  src={tech.src}
-                />
-              </div>
-            ))}
+          <div className="relative w-full">
+            <div className="flex gap-4 animate-scroll whitespace-nowrap justify-center items-center">
+              {[...techStack, ...techStack].map((tech, index) => (
+                <div
+                  key={`tech-${index}`}
+                  className="inline-flex items-center justify-center w-[90px] h-[65px] bg-[linear-gradient(180deg,rgba(217,217,217,1)_0%,rgba(96,95,95,1)_100%)] rounded-2xl shadow-md"
+                >
+                  <img
+                    className="w-[40px] h-[40px] object-contain"
+                    alt={tech.alt}
+                    src={tech.src}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* <img
-            className="w-full max-w-[1718px] h-[19px] mx-auto"
-            alt="Below decoration"
-            src="/below.png"
-          /> */}
+          <style>
+            {`
+              @keyframes scroll {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+
+              .animate-scroll {
+                display: flex;
+                animation: scroll 45s linear infinite;
+              }
+
+              .animate-scroll:hover {
+                animation-play-state: paused;
+              }
+            `}
+          </style>
         </section>
 
         {/* Footer */}
-        <footer className="w-full bg-black h-[92px] flex items-center justify-center">
-          <div className="flex items-center justify-between w-full max-w-[1000px]">
-            <div className="flex items-center">
-              {/* <img
-                className="w-[18px] h-[18px] mr-4"
-                alt="Phone icon"
-                src="/vector-2.svg"
-              /> */}
-              {/* <span className="font-['Poppins',Helvetica] font-medium text-white text-xl">
-                <span className="font-['Poppins',Helvetica] font-medium text-white text-base">
-                  +91 8939897205
-                </span>
-              </span> */}
-            </div>
-
-            <img className="h-6" alt="Contact emoji" src="/mail-removebg-preview.png" />
-
-            <div className="flex items-center">
-              <div className="relative w-[18px] h-[27px] mr-4">
-                <img
-                  className="w-[18px] h-[18px]"
-                  alt="Copyright icon"
-                  src="/copyright.png"
-                />
-                <div className="absolute top-0 left-[3px] font-['Poppins',Helvetica] font-light text-white text-lg">
-                  c
-                </div>
-              </div>
-              <span className="font-['Poppins',Helvetica] font-light text-white text-lg">
-                <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
-                  2025 by Mythili
-                </span>
-              </span>
-            </div>
+        <footer className="w-full bg-black py-4 flex flex-col items-center justify-center">
+          <div className="flex items-center space-x-2">
+            <img
+              className="w-[18px] h-[18px]"
+              alt="Copyright icon"
+              src="/copyright.png"
+            />
+            <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
+              © 2025 Mythili. All rights reserved.
+            </span>
           </div>
         </footer>
       </div>

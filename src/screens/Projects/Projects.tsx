@@ -51,17 +51,17 @@ export const Projects = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-white flex flex-row justify-center w-full min-h-screen">
-      <div className="bg-white overflow-hidden w-full max-w-[1028px] gap-8 relative">
-        {/* Header Section */}
+    <div className="bg-white flex flex-row justify-center w-full">
+      <div className="bg-white overflow-hidden w-full max-w-[1728px] relative">
+        {/* Hero Section */}
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
             {/* Navigation Bar */}
-            <div className="w-full max-w-[1104px] h-[70px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
+            <div className="w-full max-w-[850px] h-[60px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
               {navItems.map((item, index) => (
                 <Link
-                  key={`nav-${index}`}
                   to={item.path}
+                  key={`nav-${index}`}
                   className={`px-8 py-4 cursor-pointer ${index > 0 ? "ml-8" : ""}`}
                 >
                   <div
@@ -74,8 +74,8 @@ export const Projects = (): JSX.Element => {
             </div>
 
             {/* Page Title */}
-            <div className="text-left mt-8">
-              <h1 className="font-['Poppins',Helvetica] font-bold text-black text-[80px] leading-tight">
+            <div className="text-left mt-8 ml-40">
+              <h1 className="font-['Poppins',Helvetica] font-bold text-black text-[40px] leading-tight">
                 Projects
               </h1>
             </div>
@@ -84,7 +84,7 @@ export const Projects = (): JSX.Element => {
 
         {/* Projects Grid Section */}
         <section className="w-full max-w-[1024px] mx-auto py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[20rem] relative max-w-[724px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center mx-auto">
             {projects.map((project) => (
               <div
                 key={project.id}
@@ -113,38 +113,19 @@ export const Projects = (): JSX.Element => {
         </section>
 
         {/* Footer */}
-        <footer className="w-full bg-black h-[92px] flex items-center justify-center">
-          <div className="flex items-center justify-between w-full max-w-[1554px] px-8">
-            <div className="flex items-center">
-              <img
-                className="w-[18px] h-[18px] mr-4"
-                alt="Phone icon"
-                src="/vector-2.svg"
-              />
-              <span className="font-['Poppins',Helvetica] font-medium text-white text-base">
-                +91 8939897205
-              </span>
-            </div>
-
-            <img className="h-6" alt="Contact emoji" src="/contactemoji.png" />
-
-            <div className="flex items-center">
-              <div className="relative w-[18px] h-[27px] mr-4">
-                <img
-                  className="w-[18px] h-[18px]"
-                  alt="Copyright icon"
-                  src="/vector.svg"
-                />
-                <div className="absolute top-0 left-[3px] font-['Poppins',Helvetica] font-light text-white text-lg">
-                  c
-                </div>
-              </div>
-              <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
-                2025 by Mythili
-              </span>
-            </div>
+        <footer className="w-full bg-black py-4 flex flex-col items-center justify-center">
+          <div className="flex items-center space-x-2">
+            <img
+              className="w-[18px] h-[18px]"
+              alt="Copyright icon"
+              src="/copyright.png"
+            />
+            <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
+              © 2025 Mythili. All rights reserved.
+            </span>
           </div>
         </footer>
+
       </div>
     </div>
   );
