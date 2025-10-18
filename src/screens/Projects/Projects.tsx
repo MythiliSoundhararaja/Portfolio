@@ -57,23 +57,15 @@ export const Projects = (): JSX.Element => {
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
             {/* Navigation Bar */}
-<<<<<<< HEAD
             <div className="w-full max-w-[850px] h-[60px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
-=======
-            <div className="w-full max-w-[900px] h-[56px] mx-auto bg-black rounded-[48px] border border-solid border-[#524d4d] flex items-center justify-center px-5">
->>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
               {navItems.map((item, index) => (
                 <Link
                   to={item.path}
-<<<<<<< HEAD
                   key={`nav-${index}`}
                   className={`px-8 py-4 cursor-pointer ${index > 0 ? "ml-8" : ""}`}
-=======
-                  className={`px-6 py-3 cursor-pointer ${index > 0 ? "ml-6" : ""}`}
->>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
                 >
                   <div
-                    className={`text-[22px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
+                    className={`text-[28px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
                   >
                     {item.name}
                   </div>
@@ -91,36 +83,27 @@ export const Projects = (): JSX.Element => {
         </section>
 
         {/* Projects Grid Section */}
-<<<<<<< HEAD
         <section className="w-full max-w-[1024px] mx-auto py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-center mx-auto">
             {projects.map((project) => (
               <div
                 key={project.id}
                 className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[501px] h-[562px]"
-=======
-        <section className="w-full max-w-[1554px] mx-auto py-16 px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="bg-white rounded-2xl border border-[#e0e0e0] overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full max-w-[600px] mx-auto"
->>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-[250px] sm:h-[280px] lg:h-[320px] object-cover"
+                    className="w-full h-[320px] object-cover"
                   />
                 </div>
                 
-                <div className="p-4 sm:p-6 flex flex-col min-h-[200px]">
-                  <h3 className="font-['Poppins',Helvetica] font-semibold text-black text-[18px] sm:text-[20px] mb-3 line-clamp-2">
+                <div className="p-6 h-[242px] flex flex-col">
+                  <h3 className="font-['Poppins',Helvetica] font-semibold text-black text-[20px] mb-3 line-clamp-2">
                     {project.title}
                   </h3>
                   
-                  <p className="font-['Poppins',Helvetica] font-normal text-[#6d6d6d] text-[13px] sm:text-[14px] leading-relaxed flex-1 overflow-hidden line-clamp-4">
+                  <p className="font-['Poppins',Helvetica] font-normal text-[#6d6d6d] text-[14px] leading-relaxed flex-1 overflow-hidden">
                     {project.description}
                   </p>
                 </div>
@@ -129,6 +112,7 @@ export const Projects = (): JSX.Element => {
           </div>
         </section>
 
+  
         {/* Footer */}
         <footer className="w-full bg-black py-4 flex flex-col items-center justify-center">
           <div className="flex items-center space-x-2">
