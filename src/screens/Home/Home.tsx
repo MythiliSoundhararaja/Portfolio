@@ -55,19 +55,27 @@ export const Home = (): JSX.Element => {
         <section className="relative w-full max-w-[1554px] mx-auto pt-[50px]">
           <div className="relative">
             {/* Navigation Bar */}
+<<<<<<< HEAD
             <div className="w-full max-w-[850px] h-[60px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
+=======
+            <div className="w-full max-w-[900px] h-[56px] mx-auto bg-black rounded-[48px] border border-solid border-[#524d4d] flex items-center justify-center px-5">
+>>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
               {navItems.map((item, index) => (
                 <Link
                   to={item.path}
                   key={`nav-${index}`}
-                  className={`px-8 py-4 cursor-pointer ${index > 0 ? "ml-8" : ""}`}
+                  className={`px-6 py-3 cursor-pointer ${index > 0 ? "ml-6" : ""}`}
                 >
                   <div
+<<<<<<< HEAD
                     className={`text-[28px] font-['Poppins',Helvetica] ${
                       item.active
                         ? "text-white font-bold"
                         : "text-[#ababab] font-medium"
                     }`}
+=======
+                    className={`text-[22px] font-['Poppins',Helvetica] ${item.active ? "text-white font-bold" : "text-[#ababab] font-medium"}`}
+>>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
                   >
                     {item.name}
                   </div>
@@ -81,7 +89,11 @@ export const Home = (): JSX.Element => {
                 <div className="font-['Poppins',Helvetica] font-normal text-black text-[50px]">
                   Hi I'm
                 </div>
+<<<<<<< HEAD
                 <div className="font-['Poppins',Helvetica] font-normal text-black text-[100px] leading-tight">
+=======
+                <div className="font-['Poppins',Helvetica] font-normal text-black text-[200px] leading-none -mt-4">
+>>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
                   Mythili
                 </div>
                 <div className="max-w-[513px] font-['Poppins',Helvetica] font-normal text-black text-[23px] mt-4">
@@ -92,7 +104,11 @@ export const Home = (): JSX.Element => {
               <div className="flex-1 relative">
                 <div className="flex justify-center items-center">
                   <img
+<<<<<<< HEAD
                     className="w-[440px] h-[440px] object-cover"
+=======
+                    className="w-[800px] h-[800px] object-cover"
+>>>>>>> a1f2d3cbdf4bef16fc4b4059954a40928f01d15b
                     alt="Mythili 3D Avatar"
                     src="/3d_main-removebg-preview.png"
                   />
