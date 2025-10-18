@@ -11,7 +11,7 @@ export const Awards = (): JSX.Element => {
 
   return (
     <div className="bg-white flex flex-col min-h-screen">
-      {/* Navigation Bar (same as Projects page) */}
+      {/* Navigation Bar */}
       <nav className="w-full flex justify-center pt-[50px]">
         <div className="w-full max-w-[850px] h-[60px] bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center px-6">
           {navItems.map((item, index) => (
@@ -49,12 +49,12 @@ export const Awards = (): JSX.Element => {
 
         <div className="grid md:grid-cols-2 gap-6 justify-center">
           <img
-            src="public/myth_saprsh.png"
+            src="/myth_saprsh.png"
             alt="Sparsha Award 1"
             className="rounded-2xl object-cover w-full h-[360px]"
           />
           <img
-            src="public/sparsh_myth2.png"
+            src="/sparsh_myth2.png"
             alt="Sparsha Award 2"
             className="rounded-2xl object-cover w-full h-[360px]"
           />
@@ -77,7 +77,7 @@ export const Awards = (): JSX.Element => {
           {/* Card 1 */}
           <div className="border border-gray-300 rounded-2xl p-4 shadow-sm hover:shadow-md transition w-[500px] mx-auto">
             <img
-              src="public/nex_svce.png"
+              src="/nex_svce.png"
               alt="Make-a-thon"
               className="rounded-xl w-full h-[250px] object-cover"
             />
@@ -93,7 +93,7 @@ export const Awards = (): JSX.Element => {
           {/* Card 2 */}
           <div className="border border-gray-300 rounded-2xl p-4 shadow-sm hover:shadow-md transition w-[500px] mx-auto">
             <img
-              src="public/Innothon.png"
+              src="/Innothon.png"
               alt="Innothon"
               className="rounded-xl w-full h-[250px] object-cover"
             />
@@ -110,7 +110,7 @@ export const Awards = (): JSX.Element => {
           {/* Card 3 */}
           <div className="border border-gray-300 rounded-2xl p-4 shadow-sm hover:shadow-md transition w-[500px] mx-auto">
             <img
-              src="public\rd_thon.png"
+              src="/rd_thon.png"
               alt="HackHerVerse"
               className="rounded-xl w-full h-[250px] object-cover"
             />
@@ -127,7 +127,7 @@ export const Awards = (): JSX.Element => {
           {/* Card 4 */}
           <div className="border border-gray-300 rounded-2xl p-4 shadow-sm hover:shadow-md transition w-[500px] mx-auto">
             <img
-              src="public/diva.png"
+              src="/diva.png"
               alt="TechDivathon"
               className="rounded-xl w-full h-[250px] object-cover"
             />
@@ -143,19 +143,19 @@ export const Awards = (): JSX.Element => {
         </div>
       </section>
 
-        {/* Footer */}
-        <footer className="w-full bg-black py-4 flex flex-col items-center justify-center">
-          <div className="flex items-center space-x-2">
-            <img
-              className="w-[18px] h-[18px]"
-              alt="Copyright icon"
-              src="/copyright.png"
-            />
-            <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
-              © 2025 Mythili. All rights reserved.
-            </span>
-          </div>
-        </footer>
+      {/* Footer */}
+      <footer className="w-full bg-black py-4 flex flex-col items-center justify-center">
+        <div className="flex items-center space-x-2">
+          <img
+            className="w-[18px] h-[18px]"
+            alt="Copyright icon"
+            src="/copyright.png"
+          />
+          <span className="font-['Poppins',Helvetica] font-light text-white text-sm">
+            © 2025 Mythili. All rights reserved.
+          </span>
+        </div>
+      </footer>
     </div>
   );
 };
