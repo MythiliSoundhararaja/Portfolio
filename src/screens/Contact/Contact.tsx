@@ -152,7 +152,7 @@ export const Contact = (): JSX.Element => {
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-4">
           <a href="mailto:mythilisoundhararajan@gmail.com">
-            <img src="/email_logo.png" alt="Email" className="w-8 h-8 object-contain" />
+            <img src="public\email_238842.png" alt="Email" className="w-8 h-8 object-contain" />
           </a>
           <a
             href="https://www.linkedin.com/in/mythilisoundhararajan"
