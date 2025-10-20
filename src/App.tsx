@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./screens/Home";
-import { Projects } from "./screens/Projects";
-import { Awards } from "./screens/Awards";
-import { Contact } from "./screens/Contact";
 
-export const App = (): JSX.Element => {
+// ✅ Default imports (match your Home.tsx export)
+import Home from "./screens/Home/Home";
+import Projects from "./screens/Projects/Projects";
+import Awards from "./screens/Awards/Awards";
+import Contact from "./screens/Contact/Contact";
+
+const App = (): JSX.Element => {
   return (
     <Router>
       <Routes>
@@ -17,3 +19,5 @@ export const App = (): JSX.Element => {
     </Router>
   );
 };
+
+export default App;
