@@ -78,7 +78,7 @@ export const Awards = () => {
             {/* Card 1 */}
             <div className="border border-gray-300 rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-md transition">
               <img
-                src="/nex_svce.png"
+                src="/nex_svce1.png"
                 alt="Make-a-thon"
                 className="rounded-xl w-full h-56 sm:h-64 md:h-72 object-cover"
               />
