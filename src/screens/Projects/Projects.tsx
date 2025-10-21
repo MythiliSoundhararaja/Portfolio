@@ -57,36 +57,34 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="bg-white flex flex-col justify-center w-full min-h-screen">
-      <div className="bg-white overflow-hidden w-full max-w-[1728px] relative mx-auto">
-        {/* Hero Section */}
-        <section className="relative w-full max-w-[1554px] mx-auto px-4 sm:px-6">
-          
-          {/* 🧭 Navigation Bar - Compact Single Row (1x4 on mobile) */}
-          <nav className="w-full flex justify-center pt-8 sm:pt-10 px-4 sm:px-6">
-            <div className="w-full max-w-[700px] bg-black rounded-[60px] border border-[#524d4d] flex items-center justify-center p-2 sm:p-3 gap-1 sm:gap-3">
-              {navItems.map((item, index) => (
-                <Link
-                  key={index}
-                  to={item.path}
-                  className="flex-shrink-0 px-2 py-1 sm:px-4 sm:py-2 text-center whitespace-nowrap"
+    <div className="bg-white flex flex-col justify-center items-center w-full min-h-screen">
+      <div className="w-full max-w-[1728px] overflow-hidden">
+        {/* 🧭 Navigation Bar - Aligned with Home Page */}
+        <nav className="w-full flex justify-center pt-8 sm:pt-10 px-4 sm:px-6">
+          <div className="w-full max-w-[700px] bg-black rounded-[60px] border border-[#524d4d] flex items-center justify-center p-2 sm:p-3 gap-1 sm:gap-3">
+            {navItems.map((item, index) => (
+              <Link
+                key={index}
+                to={item.path}
+                className="flex-shrink-0 px-2 py-1 sm:px-4 sm:py-2 text-center whitespace-nowrap"
+              >
+                <span
+                  className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] transition-colors duration-200 ${
+                    item.active
+                      ? "text-white font-bold"
+                      : "text-[#ababab] font-medium hover:text-white"
+                  }`}
                 >
-                  <span
-                    className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] transition-colors duration-200 ${
-                      item.active
-                        ? "text-white font-bold"
-                        : "text-[#ababab] font-medium hover:text-white"
-                    }`}
-                  >
-                    {item.name}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </nav>
+                  {item.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </nav>
 
-          {/* Page Title */}
-          <div className="text-left mt-8 sm:mt-12 ml-4 sm:ml-8 md:ml-16 lg:ml-24 xl:ml-40">
+        {/* Page Title */}
+        <section className="relative w-full max-w-[1554px] mx-auto pt-12 px-4 sm:px-6 md:px-8">
+          <div className="text-left ml-4 sm:ml-8 md:ml-16 lg:ml-24 xl:ml-40">
             <h1 className="font-['Poppins',Helvetica] font-bold text-black text-3xl sm:text-4xl md:text-5xl leading-tight">
               Projects
             </h1>
@@ -94,8 +92,8 @@ export const Projects = () => {
         </section>
 
         {/* Projects Grid Section */}
-        <section className="w-full max-w-[1200px] mx-auto py-8 px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 sm:gap-8 justify-center">
+        <section className="w-full max-w-[1200px] mx-auto py-8 sm:py-12 px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 justify-center">
             {projects.map((project) => (
               <div
                 key={project.id}
@@ -124,12 +122,12 @@ export const Projects = () => {
         </section>
 
         {/* Footer */}
-        <footer className="w-full bg-black py-4 sm:py-6 flex flex-col items-center justify-center mt-8">
+        <footer className="w-full bg-black py-4 sm:py-6 flex flex-col items-center justify-center">
           <div className="flex items-center gap-2">
             <img
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              alt="Copyright icon"
               src="/copyright.png"
+              alt="Copyright icon"
+              className="w-4 h-4 sm:w-5 sm:h-5"
             />
             <span className="font-['Poppins',Helvetica] font-light text-white text-xs sm:text-sm">
               © 2025 Mythili. All rights reserved.
