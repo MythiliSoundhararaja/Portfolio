@@ -12,22 +12,20 @@ export const Awards = () => {
   return (
     <div className="bg-white flex flex-col justify-center items-center w-full min-h-screen">
       <div className="w-full max-w-[1728px] overflow-hidden">
-        {/* Navigation Bar */}
-        <nav className="w-full flex justify-center pt-10 px-4 sm:px-6">
-          <div className="w-full max-w-[850px] bg-black rounded-[60px] border border-solid border-[#524d4d] flex flex-wrap items-center justify-center p-2 sm:p-3">
+        {/* 🧭 Navigation Bar - Compact Single Row (1x4 on mobile) */}
+        <nav className="w-full flex justify-center pt-8 sm:pt-10 px-4 sm:px-6">
+          <div className="w-full max-w-[700px] bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center p-2 sm:p-3 gap-1 sm:gap-3">
             {navItems.map((item, index) => (
               <Link
                 key={index}
                 to={item.path}
-                className={`px-3 sm:px-4 md:px-6 py-2 md:py-3 ${
-                  index > 0 ? "mt-2 sm:mt-0 sm:ml-2 md:ml-4" : ""
-                } w-full sm:w-auto text-center`}
+                className="flex-shrink-0 px-2 py-1 sm:px-4 sm:py-2 text-center whitespace-nowrap"
               >
                 <div
-                  className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] ${
+                  className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] transition-colors duration-200 ${
                     item.active
                       ? "text-white font-bold"
-                      : "text-[#ababab] font-medium hover:text-white transition"
+                      : "text-[#ababab] font-medium hover:text-white"
                   }`}
                 >
                   {item.name}

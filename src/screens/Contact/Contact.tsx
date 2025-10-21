@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 
-export const Contact = (): JSX.Element => {
+export const Contact = () => {
   const navItems = [
     { name: "Home", active: false, path: "/" },
     { name: "Projects", active: false, path: "/projects" },
@@ -10,7 +10,7 @@ export const Contact = (): JSX.Element => {
     { name: "Contact", active: true, path: "/contact" },
   ];
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
 
@@ -57,28 +57,28 @@ export const Contact = (): JSX.Element => {
 
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-screen px-4 sm:px-6">
-      {/* Navigation Bar */}
-      <div className="w-full max-w-[850px] mx-auto bg-black rounded-[60px] border border-solid border-[#524d4d] flex flex-wrap items-center justify-center p-2 sm:p-3 mt-8">
-        {navItems.map((item, index) => (
-          <Link
-            to={item.path}
-            key={`nav-${index}`}
-            className={`px-3 sm:px-4 md:px-6 py-2 md:py-3 ${
-              index > 0 ? "mt-2 sm:mt-0 sm:ml-2 md:ml-4" : ""
-            } w-full sm:w-auto text-center`}
-          >
-            <div
-              className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] ${
-                item.active
-                  ? "text-white font-bold"
-                  : "text-[#ababab] font-medium hover:text-white transition"
-              }`}
+      {/* 🧭 Navigation Bar - Compact Single Row (1x4 on mobile) */}
+      <nav className="w-full flex justify-center pt-8 sm:pt-10">
+        <div className="w-full max-w-[700px] bg-black rounded-[60px] border border-solid border-[#524d4d] flex items-center justify-center p-2 sm:p-3 gap-1 sm:gap-3">
+          {navItems.map((item, index) => (
+            <Link
+              to={item.path}
+              key={`nav-${index}`}
+              className="flex-shrink-0 px-2 py-1 sm:px-4 sm:py-2 text-center whitespace-nowrap"
             >
-              {item.name}
-            </div>
-          </Link>
-        ))}
-      </div>
+              <div
+                className={`text-base sm:text-lg md:text-xl font-['Poppins',Helvetica] transition-colors duration-200 ${
+                  item.active
+                    ? "text-white font-bold"
+                    : "text-[#ababab] font-medium hover:text-white"
+                }`}
+              >
+                {item.name}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </nav>
 
       {/* Main Contact Section */}
       <section className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-8 sm:gap-10 py-12 sm:py-16 px-4 sm:px-6">
@@ -150,9 +150,9 @@ export const Contact = (): JSX.Element => {
           all of it.{" "}
           <span className="italic text-gray-500">(she think she slayed)</span>
         </p>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 mt-4">
+        <div className="flex flex-row justify-center items-center gap-4 sm:gap-6 mt-4">
           <a href="mailto:mythilisoundhararajan@gmail.com">
-            <img src="public\email_238842.png" alt="Email" className="w-8 h-8 object-contain" />
+            <img src="/email_238842.png" alt="Email" className="w-8 h-8 object-contain" />
           </a>
           <a
             href="https://www.linkedin.com/in/mythilisoundhararajan"
